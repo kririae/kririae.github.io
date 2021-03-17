@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Alternative Sky</title>
+  
+  <subtitle>\.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://kr2.moe/"/>
+  <updated>2021-03-17T04:12:10.988Z</updated>
+  <id>http://kr2.moe/</id>
+  
+  <author>
+    <name>Traceback</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Recapture That Power of Setu</title>
+    <link href="http://kr2.moe/2021/02/04/ghs/"/>
+    <id>http://kr2.moe/2021/02/04/ghs/</id>
+    <published>2021-02-04T06:58:35.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这件事儿还挺有意思的（挠头），水一篇博客。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不是一篇技术博文，这是为了爱和正义与网络安全进行的斗争&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Learning Cpp</title>
+    <link href="http://kr2.moe/2021/01/22/Learning-Cpp/"/>
+    <id>http://kr2.moe/2021/01/22/Learning-Cpp/</id>
+    <published>2021-01-22T14:05:56.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;From C++ Primer (5th edition)&lt;/p&gt;
+&lt;p&gt;From OI to Engineering&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>05</title>
+    <link href="http://kr2.moe/2021/01/02/05-1/"/>
+    <id>http://kr2.moe/2021/01/02/05-1/</id>
+    <published>2021-01-02T09:47:15.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://p.sda1.dev/0/53075cfbdd441d3bf0eace50b22231ea/image.png&quot; alt&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>九月与十月杂记</title>
+    <link href="http://kr2.moe/2020/10/21/sep_oct/"/>
+    <id>http://kr2.moe/2020/10/21/sep_oct/</id>
+    <published>2020-10-21T15:52:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我也不知道我现在哪来的心情，在一篇论文两个网课一篇演讲还处于尚未动工的状态的情况下写这篇杂记，顺带明天还有 quiz，我还没复习。后天还有体测，我也没个底。可能是因为有很多东西想要表达，也可能是因为实在太久没有正经更新过博客，总之就是，我又开始写作了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Daily" scheme="http://kr2.moe/categories/Daily/"/>
+    
+    
+      <category term="杂记" scheme="http://kr2.moe/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>并不可爱的高三</title>
+    <link href="http://kr2.moe/2020/07/24/start/"/>
+    <id>http://kr2.moe/2020/07/24/start/</id>
+    <published>2020-07-24T15:24:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这或许是人生路上又一段&lt;a href=&quot;http://music.163.com/song?id=447280637&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;稚嫩的歌曲&lt;/a&gt;，尽管我依然没能处理好许多事情，我还是决定将其记录下来，无论可爱与否，留给各位当一个参考，也给未来的自己送上一段回忆。而之所以决定在这个最难受的时期写这篇博文，大概也有自我安慰的因素。无论说了多少丧气话，发了多少呆，心里有多难受，无论怎么埋怨命运，我还是得咬着牙填写自己的未来，然后走在这完全被颠覆的人生的路上。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Daily" scheme="http://kr2.moe/categories/Daily/"/>
+    
+    
+      <category term="瞎写" scheme="http://kr2.moe/tags/%E7%9E%8E%E5%86%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OI 与其高考数学应用</title>
+    <link href="http://kr2.moe/2020/04/25/OIwithMath/"/>
+    <id>http://kr2.moe/2020/04/25/OIwithMath/</id>
+    <published>2020-04-25T06:58:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;假的标题…&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="http://kr2.moe/categories/Math/"/>
+    
+    
+      <category term="Learning" scheme="http://kr2.moe/tags/Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Winter Vacation</title>
+    <link href="http://kr2.moe/2020/02/04/winter-vacation/"/>
+    <id>http://kr2.moe/2020/02/04/winter-vacation/</id>
+    <published>2020-02-04T07:54:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;寒假编译的$\LaTeX$文档，就当一个练习吧&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Learning" scheme="http://kr2.moe/tags/Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>004</title>
+    <link href="http://kr2.moe/2019/12/31/004/"/>
+    <id>http://kr2.moe/2019/12/31/004/</id>
+    <published>2019-12-31T15:20:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/12/31/bjRehZmaXKJs3tD.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Design" scheme="http://kr2.moe/categories/Design/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>003</title>
+    <link href="http://kr2.moe/2019/11/24/003/"/>
+    <id>http://kr2.moe/2019/11/24/003/</id>
+    <published>2019-11-24T15:22:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/11/28/NxQTHaFy9rStinL.jpg&quot; alt=&quot;称为你的奇迹_画板 1.jpg&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Design" scheme="http://kr2.moe/categories/Design/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>送给自以为是的大人</title>
+    <link href="http://kr2.moe/2019/11/08/tenkinoko/"/>
+    <id>http://kr2.moe/2019/11/08/tenkinoko/</id>
+    <published>2019-11-08T16:02:03.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;——世界为什么会回归原有的样子&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>001</title>
+    <link href="http://kr2.moe/2019/10/20/001/"/>
+    <id>http://kr2.moe/2019/10/20/001/</id>
+    <published>2019-10-20T03:53:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/10/20/nL7Bm3KkqavSXej.jpg&quot; alt&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Design" scheme="http://kr2.moe/categories/Design/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>今日的改动</title>
+    <link href="http://kr2.moe/2019/10/12/add-comment-system/"/>
+    <id>http://kr2.moe/2019/10/12/add-comment-system/</id>
+    <published>2019-10-12T16:04:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;添加了评论系统。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CS" scheme="http://kr2.moe/categories/CS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>有感而发</title>
+    <link href="http://kr2.moe/2019/10/03/Feeling20191003/"/>
+    <id>http://kr2.moe/2019/10/03/Feeling20191003/</id>
+    <published>2019-10-03T14:43:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有关《Dimension ~w~》&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Daily" scheme="http://kr2.moe/categories/Daily/"/>
+    
+    
+      <category term="瞎写" scheme="http://kr2.moe/tags/%E7%9E%8E%E5%86%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>restart</title>
+    <link href="http://kr2.moe/2019/09/21/restart/"/>
+    <id>http://kr2.moe/2019/09/21/restart/</id>
+    <published>2019-09-21T16:14:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;因为高三了，没时间折腾，我的 VPS 需要关闭一年，那期间 daily blog 寄存在 mgt 或 lr 的 server 上。而这个技术博客，我花了一个晚上的时间部署到了 netlify 上。算是 restart 吧？&lt;/p&gt;
+&lt;p&gt;顺带还折腾了 mathjax，「数论
+      
+    
+    </summary>
+    
+    
+      <category term="Daily" scheme="http://kr2.moe/categories/Daily/"/>
+    
+    
+      <category term="瞎写" scheme="http://kr2.moe/tags/%E7%9E%8E%E5%86%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>五彩斑斓的 OI</title>
+    <link href="http://kr2.moe/2019/07/15/colorful_oi/"/>
+    <id>http://kr2.moe/2019/07/15/colorful_oi/</id>
+    <published>2019-07-15T02:31:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;仅此献给那段时光。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Daily" scheme="http://kr2.moe/categories/Daily/"/>
+    
+    
+      <category term="Memories" scheme="http://kr2.moe/tags/Memories/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Math Theory</title>
+    <link href="http://kr2.moe/2018/07/30/math_theory/"/>
+    <id>http://kr2.moe/2018/07/30/math_theory/</id>
+    <published>2018-07-30T04:40:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;数论&quot;&gt;&lt;a href=&quot;#数论&quot; class=&quot;headerlink&quot; title=&quot;数论&quot;&gt;&lt;/a&gt;数论&lt;/h1&gt;&lt;p&gt;这真的是一篇很长的数论笔记。&lt;br&gt;有不少问题。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/08/04/5b652a0e624c9.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;数论全笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="http://kr2.moe/categories/Math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Atcoder 爽题集合</title>
+    <link href="http://kr2.moe/2018/06/22/atc_problems/"/>
+    <id>http://kr2.moe/2018/06/22/atc_problems/</id>
+    <published>2018-06-22T23:26:00.000Z</published>
+    <updated>2021-03-17T04:12:10.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Atcoder爽题集合&quot;&gt;&lt;a href=&quot;#Atcoder爽题集合&quot; class=&quot;headerlink&quot; title=&quot;Atcoder爽题集合&quot;&gt;&lt;/a&gt;Atcoder爽题集合&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="CS" scheme="http://kr2.moe/categories/CS/"/>
+    
+    
+      <category term="Atcoder" scheme="http://kr2.moe/tags/Atcoder/"/>
+    
+      <category term="Algorithms" scheme="http://kr2.moe/tags/Algorithms/"/>
+    
+  </entry>
+  
+</feed>
