@@ -19,7 +19,7 @@
 <meta property="og:description" content="其实是作为 GAMES101 的大作业的">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://p.sda1.dev/2/a5f02d326d4c2432f08fe1816295be93/image.png">
-<meta property="og:updated_time" content="2021-08-16T09:24:24.778Z">
+<meta property="og:updated_time" content="2021-08-16T09:30:57.908Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零开始的 Position Based Fluid">
 <meta name="twitter:description" content="其实是作为 GAMES101 的大作业的">
@@ -82,8 +82,12 @@
       hljs.configure({
         tabReplace: "    ",
       });
-      hljs.highlightAll();
-      // hljs.initHighlightingOnLoad();
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });
     </script>
 
     <script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>

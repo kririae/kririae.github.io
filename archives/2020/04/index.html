@@ -79,8 +79,12 @@
       hljs.configure({
         tabReplace: "    ",
       });
-      hljs.highlightAll();
-      // hljs.initHighlightingOnLoad();
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });
     </script>
 
     <script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>

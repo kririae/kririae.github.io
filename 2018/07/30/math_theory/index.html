@@ -19,7 +19,7 @@
 <meta property="og:description" content="数论这真的是一篇很长的数论笔记。有不少问题。   数论全笔记">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.loli.net/2018/08/04/5b652a0e624c9.jpg">
-<meta property="og:updated_time" content="2021-08-16T09:24:24.778Z">
+<meta property="og:updated_time" content="2021-08-16T09:30:57.908Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Math Theory">
 <meta name="twitter:description" content="数论这真的是一篇很长的数论笔记。有不少问题。   数论全笔记">
@@ -82,8 +82,12 @@
       hljs.configure({
         tabReplace: "    ",
       });
-      hljs.highlightAll();
-      // hljs.initHighlightingOnLoad();
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });
     </script>
 
     <script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
