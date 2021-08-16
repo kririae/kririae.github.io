@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="Alternative Sky">
 <meta property="og:description" content="我也不知道我现在哪来的心情，在一篇论文两个网课一篇演讲还处于尚未动工的状态的情况下写这篇杂记，顺带明天还有 quiz，我还没复习。后天还有体测，我也没个底。可能是因为有很多东西想要表达，也可能是因为实在太久没有正经更新过博客，总之就是，我又开始写作了。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-05-15T05:25:03.116Z">
+<meta property="og:updated_time" content="2021-08-16T09:24:24.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="九月与十月杂记">
 <meta name="twitter:description" content="我也不知道我现在哪来的心情，在一篇论文两个网课一篇演讲还处于尚未动工的状态的情况下写这篇杂记，顺带明天还有 quiz，我还没复习。后天还有体测，我也没个底。可能是因为有很多东西想要表达，也可能是因为实在太久没有正经更新过博客，总之就是，我又开始写作了。">
@@ -36,18 +36,13 @@
     </script>
 
     <script>
-      MathJax = {
+      window.MathJax = {
         // mathjax config
+        loader: { load: ["[tex]/ams"] },
         tex: {
-          packages: ["base"],
-          inlineMath: [
-            ["$", "$"],
-            ["\\(", "\\)"],
-          ],
-          displayMath: [
-            ["$$", "$$"],
-            ["\\[", "\\]"],
-          ],
+          packages: { "[+]": ["ams"] },
+          inlineMath: [["$", "$"]],
+          displayMath: [["$$", "$$"]],
           processEscapes: true,
           digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
           maxBuffer: 5 * 1024,
@@ -79,15 +74,15 @@
     </script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/styles/atom-one-dark.min.css">
-
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/atom-one-dark.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
 
     <script>
       hljs.configure({
         tabReplace: "    ",
       });
-      hljs.initHighlightingOnLoad();
+      hljs.highlightAll();
+      // hljs.initHighlightingOnLoad();
     </script>
 
     <script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
@@ -412,5 +407,20 @@
 <script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

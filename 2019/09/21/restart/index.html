@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="Alternative Sky">
 <meta property="og:description" content="因为高三了，没时间折腾，我的 VPS 需要关闭一年，那期间 daily blog 寄存在 mgt 或 lr 的 server 上。而这个技术博客，我花了一个晚上的时间部署到了 netlify 上。算是 restart 吧？ 顺带还折腾了 mathjax，「数论」那篇的公式渲染依然有问题。本以为是 mathjax v3 的锅，结果只是博文格式的一些问题。之后国庆再来解决吧。 我删除了基本所有的博文，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-05-15T05:25:03.116Z">
+<meta property="og:updated_time" content="2021-08-16T09:24:24.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="restart">
 <meta name="twitter:description" content="因为高三了，没时间折腾，我的 VPS 需要关闭一年，那期间 daily blog 寄存在 mgt 或 lr 的 server 上。而这个技术博客，我花了一个晚上的时间部署到了 netlify 上。算是 restart 吧？ 顺带还折腾了 mathjax，「数论」那篇的公式渲染依然有问题。本以为是 mathjax v3 的锅，结果只是博文格式的一些问题。之后国庆再来解决吧。 我删除了基本所有的博文，">
@@ -36,18 +36,13 @@
     </script>
 
     <script>
-      MathJax = {
+      window.MathJax = {
         // mathjax config
+        loader: { load: ["[tex]/ams"] },
         tex: {
-          packages: ["base"],
-          inlineMath: [
-            ["$", "$"],
-            ["\\(", "\\)"],
-          ],
-          displayMath: [
-            ["$$", "$$"],
-            ["\\[", "\\]"],
-          ],
+          packages: { "[+]": ["ams"] },
+          inlineMath: [["$", "$"]],
+          displayMath: [["$$", "$$"]],
           processEscapes: true,
           digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
           maxBuffer: 5 * 1024,
@@ -79,15 +74,15 @@
     </script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/styles/atom-one-dark.min.css">
-
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/atom-one-dark.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
 
     <script>
       hljs.configure({
         tabReplace: "    ",
       });
-      hljs.initHighlightingOnLoad();
+      hljs.highlightAll();
+      // hljs.initHighlightingOnLoad();
     </script>
 
     <script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
@@ -392,5 +387,20 @@
 <script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
