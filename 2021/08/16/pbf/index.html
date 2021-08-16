@@ -18,12 +18,13 @@
 <meta property="og:site_name" content="Alternative Sky">
 <meta property="og:description" content="其实是作为 GAMES101 的大作业的">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://p.sda1.dev/2/74ca242e43715dc403098b540b62eb86/indoor_cycles_x.png">
 <meta property="og:image" content="https://p.sda1.dev/2/a5f02d326d4c2432f08fe1816295be93/image.png">
-<meta property="og:updated_time" content="2021-08-16T09:30:57.908Z">
+<meta property="og:updated_time" content="2021-08-16T10:25:48.038Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零开始的 Position Based Fluid">
 <meta name="twitter:description" content="其实是作为 GAMES101 的大作业的">
-<meta name="twitter:image" content="https://p.sda1.dev/2/a5f02d326d4c2432f08fe1816295be93/image.png">
+<meta name="twitter:image" content="https://p.sda1.dev/2/74ca242e43715dc403098b540b62eb86/indoor_cycles_x.png">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -195,13 +196,13 @@
 		<span class="vertical-line" style="color: #b5b5b5; margin: 0px 5px 0px 5px;">|</span>
 
 		<span class="words-count">
-			总字数 2.9k
+			总字数 3.2k
 		</span>
 
 		<span class="vertical-line" style="color: #b5b5b5; margin: 0px 5px 0px 5px;">|</span>
 
 		<span class="time-count">
-			期望阅读时间 11 min
+			期望阅读时间 12 min
 		</span>
 	</section>
 	
@@ -212,6 +213,10 @@
 			<p>其实是作为 GAMES101 的大作业的</p>
 <a id="more"></a>
 
+<p><img src="https://p.sda1.dev/2/74ca242e43715dc403098b540b62eb86/indoor_cycles_x.png" alt></p>
+<blockquote>
+<p>Rendered by blender, cycles-x</p>
+</blockquote>
 <p>（其实这是这篇 report 写的第三次了，前两次写的多多少少都有问题）</p>
 <p>说是 report，我当然没打算把它当成 report 来写，就随意一点，写一些自己写这玩意儿中的心得体会。</p>
 <p>作为一个工程和算法融合的项目，我真的是花了挺大精力来做这玩意儿的。</p>
@@ -297,7 +302,9 @@ public:
   // ...
 };</code></pre>
 <p>很可惜的是，在大常数下，$n^2$ 完全无法满足性能需求。我那时偷懒，一直懒于实现高性能的数据结构，直到后来完全无法预览，我在写出了第一版的加速数据结构后整个代码的结果终于能预览了。</p>
-<p>但是！这时候的预览结果可以说是一团糟。</p>
+<p>但是！这时候的预览结果可以说是一团糟。理论上来说 PBF 应该能够在 $\Delta t \approx 0.01$ 时稳定的，但是我的这套系统哪怕已经到了 $\Delta t = 0.0016$ 都无法稳定运行，这事让人颇为迷惑。后来才反应过来，是核函数与整体 scale 的问题。如果我将 <code>radius</code> 设置为 0.01~0.1，poly6 在 $x = 0$ 时的值就会极大，导致（我们在求梯度时使用的是与之接近而 spiky kernel）两粒子在靠近时没有缓冲的空间。我将整个坐标系扩大了十倍，这时 poly6 的梯度明显减小，系统终于稳定了下来（困扰了我好几天！），未经优化而情况下，能在 3k particles 时跑到 20fps。</p>
+<p>当然… 那些简单的优化我认为不必再提，不过是加几个 <code>#pragma omp</code> 的事情而已。白嫖了将近 50 倍的性能，已经接近别人在 CUDA 上的实现，但是与原论文的实现依然有较大差距。既然我没有能力 profile，就先暂时到此为止吧？</p>
+<p>这回</p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>[1]: Macklin, Miles, and Matthias Müller. “Position Based Fluids.” ACM Transactions on Graphics (TOG) 32.4 (2013): 104.</p>
 <p>[2]: Ihmsen, M., Akinci, N., Becker, M., &amp; Teschner, M. (2010). A Parallel SPH Implementation on Multi-Core CPUs. Computer Graphics Forum, 30(1), 99–112.</p>
 
