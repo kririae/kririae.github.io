@@ -11,19 +11,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="https://p.sda1.dev/1/31a2170cd16f0fb7ab2e50b2e39bf9a1/avatar.jpg"> <link rel="alternate" href="/atom.xml" title="Alternative Sky">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="其实是作为 GAMES101 的大作业的">
+    <meta name="description" content="这个其实是 GAMES101 的大作业">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从零开始的 Position Based Fluid">
 <meta property="og:url" content="http://kr2.moe/2021/08/16/pbf/index.html">
 <meta property="og:site_name" content="Alternative Sky">
-<meta property="og:description" content="其实是作为 GAMES101 的大作业的">
+<meta property="og:description" content="这个其实是 GAMES101 的大作业">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://p.sda1.dev/2/74ca242e43715dc403098b540b62eb86/indoor_cycles_x.png">
 <meta property="og:image" content="https://p.sda1.dev/2/a5f02d326d4c2432f08fe1816295be93/image.png">
-<meta property="og:updated_time" content="2021-08-16T10:25:48.038Z">
+<meta property="og:updated_time" content="2021-08-30T04:18:37.833Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零开始的 Position Based Fluid">
-<meta name="twitter:description" content="其实是作为 GAMES101 的大作业的">
+<meta name="twitter:description" content="这个其实是 GAMES101 的大作业">
 <meta name="twitter:image" content="https://p.sda1.dev/2/74ca242e43715dc403098b540b62eb86/indoor_cycles_x.png">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
@@ -196,21 +196,21 @@
 		<span class="vertical-line" style="color: #b5b5b5; margin: 0px 5px 0px 5px;">|</span>
 
 		<span class="words-count">
-			总字数 3.2k
+			总字数 4.5k
 		</span>
 
 		<span class="vertical-line" style="color: #b5b5b5; margin: 0px 5px 0px 5px;">|</span>
 
 		<span class="time-count">
-			期望阅读时间 12 min
+			期望阅读时间 17 min
 		</span>
 	</section>
 	
-	<section class="tog"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-1-Infrastructure"><span class="toc-number">1.</span> <span class="toc-text">Part 1 - Infrastructure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-2-Mathematics"><span class="toc-number">2.</span> <span class="toc-text">Part 2 - Mathematics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-3-Implementation"><span class="toc-number">3.</span> <span class="toc-text">Part 3 - Implementation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">4.</span> <span class="toc-text">Reference</span></a></li></ol></section>
+	<section class="tog"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-1-Infrastructure"><span class="toc-number">1.</span> <span class="toc-text">Part 1 - Infrastructure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-2-Mathematics"><span class="toc-number">2.</span> <span class="toc-text">Part 2 - Mathematics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-3-Implementation"><span class="toc-number">3.</span> <span class="toc-text">Part 3 - Implementation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-4-Optimization"><span class="toc-number">4.</span> <span class="toc-text">Part 4 - Optimization</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">5.</span> <span class="toc-text">Reference</span></a></li></ol></section>
 	
 	<section class="article typo">
 		<div class="article-entry" itemprop="articleBody">
-			<p>其实是作为 GAMES101 的大作业的</p>
+			<p>这个其实是 GAMES101 的大作业</p>
 <a id="more"></a>
 
 <p><img src="https://p.sda1.dev/2/74ca242e43715dc403098b540b62eb86/indoor_cycles_x.png" alt></p>
@@ -281,7 +281,7 @@ public:
 <p>$$<br>  s_{corr} = -k\left(\dfrac{\mathrm{W}(\boldsymbol{p_i} - \boldsymbol{p_j}, h)}{\mathrm{W}(\Delta \boldsymbol{q}, h)}\right)^n<br>$$</p>
 <p>其中 $\Delta \boldsymbol{q}$ 是一个固定距离，这个公式想要表达的是，在 $\Delta \boldsymbol{q}$ 一定时，两个粒子的距离越远，修正作用越弱。而这个修正被放在了求解 $\Delta \boldsymbol{p}$ 的公式中</p>
 <p>$$<br>  \Delta \boldsymbol{p_i} = \dfrac{1}{\rho_0}{\sum_{j}{(\lambda_i + \lambda_j + s_{corr})}} \nabla \mathrm{W}(\boldsymbol{p_i} - \boldsymbol{p_j}, h)<br>$$</p>
-<h2 id="Part-3-Implementation"><a href="#Part-3-Implementation" class="headerlink" title="Part 3 - Implementation"></a>Part 3 - Implementation</h2><p>目前最终实现的结果在<a href="https://github.com/kririae/toys/tree/main/pbf3d" target="_blank" rel="noopener">这里</a></p>
+<h2 id="Part-3-Implementation"><a href="#Part-3-Implementation" class="headerlink" title="Part 3 - Implementation"></a>Part 3 - Implementation</h2><p>目前最终实现的结果在<a href="https://github.com/kririae/fluidsim" target="_blank" rel="noopener">这里</a></p>
 <p>效果如图（我有点懒得搞 gif 了，看静态吧！）</p>
 <p><img src="https://p.sda1.dev/2/a5f02d326d4c2432f08fe1816295be93/image.png" alt></p>
 <p>拖 OMP, GCC 的福，我很轻松就将其优化到了 16 threads 15k particles 60fps，单帧计算 13ms+，尽管还有挺大的优化空间，在自己的系统和并行计算知识完备前我就不做 CUDA 和其他多线程优化了，还有一个原因是我懒得去租 intel 的机器，没有一个足够好的 profiler（AMD！你看看人家的 vtune）</p>
@@ -304,7 +304,53 @@ public:
 <p>很可惜的是，在大常数下，$n^2$ 完全无法满足性能需求。我那时偷懒，一直懒于实现高性能的数据结构，直到后来完全无法预览，我在写出了第一版的加速数据结构后整个代码的结果终于能预览了。</p>
 <p>但是！这时候的预览结果可以说是一团糟。理论上来说 PBF 应该能够在 $\Delta t \approx 0.01$ 时稳定的，但是我的这套系统哪怕已经到了 $\Delta t = 0.0016$ 都无法稳定运行，这事让人颇为迷惑。后来才反应过来，是核函数与整体 scale 的问题。如果我将 <code>radius</code> 设置为 0.01~0.1，poly6 在 $x = 0$ 时的值就会极大，导致（我们在求梯度时使用的是与之接近而 spiky kernel）两粒子在靠近时没有缓冲的空间。我将整个坐标系扩大了十倍，这时 poly6 的梯度明显减小，系统终于稳定了下来（困扰了我好几天！），未经优化而情况下，能在 3k particles 时跑到 20fps。</p>
 <p>当然… 那些简单的优化我认为不必再提，不过是加几个 <code>#pragma omp</code> 的事情而已。白嫖了将近 50 倍的性能，已经接近别人在 CUDA 上的实现，但是与原论文的实现依然有较大差距。既然我没有能力 profile，就先暂时到此为止吧？</p>
-<p>这回</p>
+<h2 id="Part-4-Optimization"><a href="#Part-4-Optimization" class="headerlink" title="Part 4 - Optimization"></a>Part 4 - Optimization</h2><p>回到学校后，我忽然又产生了继续完成这个项目的动力，于是我在其上再做了一些修改，并实现了 CUDA 版本。</p>
+<p>目前 (2021/08/29)，这份代码依然存在很大的真实性问题。（特别是在 mesh 之后，丢到 blender 里去预览那叫一个密恐福利）</p>
+<p>我主要做了架构优化，CUDA 优化，和 mesh 支持三个改动，还有不少杂七杂八的改动我就不说了。</p>
+<p>架构优化比较复杂，也还没做完。比如对 radius 和 border 等等参数的设置依然完全不 OOP. 但是把这几个都 OOP 的话，后面某些部分就会有麻烦。</p>
+<p>比如 CUDA 的部分，我对 CUDA 那叫做一个入门，我只简单读了 thrust 的文档，看了两三章 CUDA by Example，不过幸亏这个 project 对 CUDA 的要求比较低，只需要按照最套路的 <code>&lt;&lt;&lt;num_threads, threads_per_blocK&gt;&gt;&gt;</code> 来跑即可。然后在有 overlap 的哈希表上处理一下，你就会发现，CUDA 是真他妈的快。</p>
+<p>只可惜 <code>__global__</code> 函数必须位于全局作用域，于是所有的 OOP 使用的参数必须一个一个传给他，一个典型的参数列表大概是这样的。</p>
+<pre><code class="cpp">__global__ void fill_lambda(SPHParticle *dev_data,
+                            size_t data_size,
+                            int *dev_neighbor_map,
+                            const int *dev_n_neighbor_map,
+                            size_t pitch_neighbor,
+                            float *c_i,
+                            float *lambda,
+                            float rho_0,
+                            float mass)
+// ...</code></pre>
+<p>然后每一次调用都需要传入全部的.. 你说噩梦不噩梦。我本来想用宏解决，后来还是决定直接写好了。</p>
+<p>将原本的搬到 CUDA 也就两个难点，注意内存的原子访问的问题，当然，如果下标互不相同不用担心，在有可能会同时访问的下标加个锁即可。</p>
+<p>这里有个坑，他妈的。我后来才注意到。我的迭代过程是这样的：</p>
+<p>最开始，CPU 上的代码能够正常运行，分为数据结构实现 <code>nsearch.hpp/cpp</code> 和算法实现 <code>pbd.hpp/cpp</code> 两个文件。先修改其中任意一者都可以，但是不要同时修改两者。</p>
+<p>我先重构了 <code>pbd.cpp</code>，其输入稍微复杂一些，原本是一个 <code>vector</code> 套 <code>vector</code> 的动态二维数组，我将其改成了一个静态的二维数组与一个静态的数组，设置一个最大长度，尝试模拟一个 <code>vector</code> 套 <code>vector</code>。（我把所有的动态数组都改成了这种形式了）</p>
+<p>在极其激进的流体分布下可能会崩溃，大部分时候还好。而且这样保证了显卡内部的内存对齐与连续访问，所以重构后，<code>pbd.cu</code> 的输入是一个 neighbor map，表示每个粒子的临近粒子的下标与个数，还有一个 <code>data</code> 数组表示所有的粒子。</p>
+<p>输出依然是 <code>data</code>，当然，为了抽象，我们不用考虑其内容是在什么平台上，先统一拷贝到内存中。经过简短的调试，目前可以运行。但是 <code>cudaMemcpyDtoH</code> 耗时太长，因为 neighbor map 实在不小，完全无法满足 real-time 的需求。于是下一步是把建立 neighbor map 的数据结构搬到 CUDA 上.</p>
+<p>这步搬迁的思路和之前一样，只是在 build hash map 的时候，我因为经验不足和个人傻逼狠狠地被坑了一回，代码如下</p>
+<pre><code class="cpp">// ...
+  if (i &lt; data_size) {
+    int hash_map_index = PBDSolver::hash(dev_data[i].pos, n_grids);
+    int *dev_hash_map_item = (int *)((char *)dev_hash_map +
+                                     pitch_hash * hash_map_index);
+    if (dev_n_hash_map[hash_map_index] &lt; PBDSolver::MAX_NEIGHBOR_SIZE) {
+    while (atomicCAS(&amp;hash_map_mutex[hash_map_index], 0, 1) != 0)
+      ;
+      atomicExch((int *)&amp;(dev_hash_map_item[dev_n_hash_map[hash_map_index]]),
+                 (int)i);
+      atomicAdd((int *)&amp;(dev_n_hash_map[hash_map_index]), 1);
+      atomicExch(&amp;hash_map_mutex[hash_map_index], 0);
+    }
+  }
+}</code></pre>
+<p>我一开始看起来没啥问题，盯了半天也不觉得有什么问题，后来我把 <code>lock</code> 调整到了 <code>if</code> 外才发现这个问题。原来我没锁住 <code>dev_n_hash_map</code> 的访问，这整个 <code>if</code> 应该都被锁住。…</p>
+<p>就莫名奇妙地被卡住，然后莫名奇妙地解决。</p>
+<p>不过说实话我不太习惯 <code>thrust</code> 的玩法，怎么有点别扭呢… 据猫猫所说，thrust 的函数会同时调用 CPU 和 GPU 导致超功耗。不过说实话，你确实用不满 CPU 到 GPU 的带宽（经过 profile，大概只使用了 1/5），用 CPU 的算力优化一下也无可厚非。</p>
+<p>不过不管 CPU 怎么 vectorize 加上 parallize 也跑不过 gpu 啊，在这些计算密集型。虽然 nvidia 的 profiler 乱成一锅粥，我都弄不清楚有几个（我用过的已经有三个？至少比 uprof 好用，AMD 骂的就是你）。经过两天的编码与调试，总算是弄完了。</p>
+<p>不过目前，我写的都是 basic CUDA，UM 啊，任何一点稍微高级一点的语法和 feature 都没有使用。如果不出意外的话，之后会 bfs 下去。</p>
+<p>关于 mesh 的部分我就不多说了，因为我偷懒了用了 OpenVDB，并没有自己去实现 marching cubes. 但是添加了 OpenVDB 之后，编译时间变得梦幻了起来.. 暂时不太清楚如何解决，如果知道了我会添加。（我的头文件不乱啊！）</p>
+<p>这个项目的下一步是实现 WCSPH，并添加 caustics 的支持（既然是水面，当然少不了焦散对吧！）</p>
+<p>之后再见！</p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>[1]: Macklin, Miles, and Matthias Müller. “Position Based Fluids.” ACM Transactions on Graphics (TOG) 32.4 (2013): 104.</p>
 <p>[2]: Ihmsen, M., Akinci, N., Becker, M., &amp; Teschner, M. (2010). A Parallel SPH Implementation on Multi-Core CPUs. Computer Graphics Forum, 30(1), 99–112.</p>
 
